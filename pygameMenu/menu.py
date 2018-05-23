@@ -203,10 +203,10 @@ class Menu(object):
         self._size = 0  # Menu total elements
 
         # Load fonts
-        try:
-            self._font = _pygame.font.Font(font, self._fsize)
-        except Exception:
-            raise Exception('Could not load {0} font file'.format(font))
+        #try:
+        self._font = _pygame.font.Font(font, self._fsize)
+        #except Exception:
+        #    raise Exception('Could not load {0} font file'.format(font))
         if font_title is None:
             font_title = font
         self._font_title = _pygame.font.Font(font_title, self._fsize_title)
